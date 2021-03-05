@@ -91,7 +91,6 @@ def main():
     import torch.backends.cudnn as cudnn
     from torch.utils.data import DataLoader
     from tqdm import tqdm
-    from datasets.s3dis_voxel import collate_voxel
 
     ################################
     # Train / Eval Kernel Function #
