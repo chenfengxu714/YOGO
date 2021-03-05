@@ -8,3 +8,4 @@ h5py
 plyfile
 six
 Cython
+ninja
