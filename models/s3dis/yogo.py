@@ -180,7 +180,7 @@ class YOGO(nn.Module):
             knn_idx = mf.ball_query(
                 center_pts, coords, self.ball_r, self.token_s
                 )
-        elif:
+        else:
             knn_idx = knn_search(coords, center_pts, self.token_s)       
             knn_idx = torch.from_numpy(knn_idx).cuda()
         
