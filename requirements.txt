@@ -1,6 +1,6 @@
 torch==1.4
 tensorboardX
-numpy=1.15
+numpy==1.15
 scipy
 numba
 tqdm
