@@ -1,4 +1,4 @@
-torch==1.4
+torch==1.5
 tensorboardX
 numpy==1.15
 scipy
