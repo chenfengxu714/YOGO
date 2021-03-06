@@ -207,20 +207,7 @@ def main():
     if 'scheduler' in configs.train and configs.train.scheduler is not None:
         configs.train.scheduler.last_epoch = last_epoch
         print(f'==> creating scheduler "{configs.train.scheduler}"')
-        if configs.train.warmup is True:
-            #warmup = 15
-            #lmbda = lambda epoch: 1*(4096)**(-0.5)*min((epoch+1)**(-0.5), (epoch+1)*warmup**(-1.5))
-            #scheduler = LambdaLR(optimizer, lr_lambda=[lmbda])
-            scheduler = torch.optim.lr_scheduler.LambdaLR(
-                    optimizer, lr_lambda=partial(
-                        cosine_schedule_with_warmup,
-                        num_epochs=configs.train.num_epochs,
-                        batch_size=configs.train.batch_size
-                    )
-                )
-                        
-        else:
-            scheduler = configs.train.scheduler(optimizer)
+        scheduler = configs.train.scheduler(optimizer)
     else:
         scheduler = None
 
