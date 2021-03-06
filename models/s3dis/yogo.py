@@ -262,7 +262,7 @@ class YOGO(nn.Module):
         norm_layer = kwargs['norm']
         
         self.stem = nn.Sequential(
-            conv1x1_1d(22, cs[0]),
+            conv1x1_1d(9, cs[0]),
             norm_layer(cs[0]),
             nn.ReLU(inplace=True),
             conv1x1_1d(cs[0], cs[0]),
@@ -296,18 +296,11 @@ class YOGO(nn.Module):
 
         coords = x[:, :3, :]
 
-        one_hot_vectors = x[:, -16:, :]
-
         B, _, N = x.shape
 
         feature_stem = self.stem(x)
-        if self.training: 
-            token_l = int(
-                np.random.randint(self.token_l-8, self.token_l+8))
-            center_pts = furthest_point_sample(
-                coords, token_l)
-        else:
-            center_pts = furthest_point_sample(
+
+        center_pts = furthest_point_sample(
                 coords, self.token_l)
 
         if self.group_ == 'ball_query':
