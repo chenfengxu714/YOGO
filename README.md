@@ -14,7 +14,7 @@ This repository contains a Pytorch implementation of YOGO, a new, simple, and el
 
 Selected quantitative results of different approaches on the ShapeNet and S3DIS dataset.
 
-ShapeNet part segmentation
+### ShapeNet part segmentation:
 
 |   Method       | mIoU | Latency (ms) | GPU Memory (GB)|
 | ---------------|------|--------------|----------------|
@@ -26,7 +26,7 @@ ShapeNet part segmentation
 | YOGO(KNN)      | 85.2 |25.6          | 0.9            |
 |YOGO(Ball query)| 85.1 |21.3          | 1.0            |
 
-S3DIS scene parsing:
+### S3DIS scene parsing:
 
 |   Method       | mIoU | Latency (ms) | GPU Memory (GB)|
 | ---------------|------|--------------|----------------|
