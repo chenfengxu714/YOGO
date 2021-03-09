@@ -108,5 +108,5 @@ python train.py [config-file] --devices [gpu-ids] --evaluate --configs.evaluate.
 
 
 ## Acknowledgement:
-The code modified from [PVCNN](https://github.com/mit-han-lab/pvcnn) and the code for KNN is from (Pointconv)[https://github.com/aboulch/ConvPoint/tree/master/convpoint].
+The code modified from [PVCNN](https://github.com/mit-han-lab/pvcnn) and the code for KNN is from [Pointconv](https://github.com/aboulch/ConvPoint/tree/master/convpoint).
 
