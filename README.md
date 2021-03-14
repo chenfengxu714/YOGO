@@ -99,6 +99,14 @@ To infer the predictions for the entire dataset:
 ```shell
 python train.py [config-file] --devices [gpu-ids] --evaluate --configs.evaluate.best_checkpoint_path [path to the model checkpoint]
 ```
+
+for example, you can run the below command for ShapeNet inference:
+
+```shell
+python train.py configs/shapenet/yogo/yogo.py --devices 0 --evaluate --configs.evaluate.best_checkpoint_path [path to the model checkpoint]
+```
+
+
 ## Training:
 To train the model:
 
@@ -106,7 +114,20 @@ To train the model:
 python train.py [config-file] --devices [gpu-ids] --evaluate --configs.evaluate.best_checkpoint_path [path to the model checkpoint]
 ```
 
+for example, you can run the below command for ShapeNet training:
+
+```shell
+python train.py configs/shapenet/yogo/yogo.py --devices 0
+```
+
+You can run the below command for multi-gpu training:
+
+```shell
+python train.py configs/shapenet/yogo/yogo.py --devices 0,1,2,3
+```
+
+Note that we conduct training on Titan RTX gpu, you can modify the batch size according your GPU memory, the performance is slightly different.
 
 ## Acknowledgement:
-The code modified from [PVCNN](https://github.com/mit-han-lab/pvcnn) and the code for KNN is from [Pointconv](https://github.com/aboulch/ConvPoint/tree/master/convpoint).
+The code is modified from [PVCNN](https://github.com/mit-han-lab/pvcnn) and the code for KNN is from [Pointconv](https://github.com/aboulch/ConvPoint/tree/master/convpoint).
 
