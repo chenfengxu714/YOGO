@@ -88,11 +88,6 @@ python setup.py install --home='.'
 
 * Click to download [ShapeNet](https://www.shapenet.org) and [S3DIS](https://web.archive.org/web/20200707221857/http://buildingparser.stanford.edu/dataset.html#Download) dataset.
 
-
-## Pre-trained Models
-
-The pre-trained YOGO on the two datasets are avaliable at [Google Drive] (), you can directly download the two files.
-
 ## Inference
 To infer the predictions for the entire dataset:
 
