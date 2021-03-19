@@ -41,11 +41,13 @@ Selected quantitative results of different approaches on the ShapeNet and S3DIS 
 If you find this work useful for your research, please consider citing:
 
 ```
-@article{xu2021you,
-  title={You Only Group Once: Efficient Point-Cloud Processing with Token Representation and Relation Inference Module},
-  author={Xu, Chenfeng and Zhai, Bohan and Wu, Bichen and Li, Tian and Zhan, Wei and Vajda, Peter and Keutzer, Kurt and Tomizuka, Masayoshi},
-  journal={\},
-  year={2021}
+@misc{xu2021group,
+      title={You Only Group Once: Efficient Point-Cloud Processing with Token Representation and Relation Inference Module}, 
+      author={Chenfeng Xu and Bohan Zhai and Bichen Wu and Tian Li and Wei Zhan and Peter Vajda and Kurt Keutzer and Masayoshi Tomizuka},
+      year={2021},
+      eprint={2103.09975},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
 }
 ```
 
