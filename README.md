@@ -53,11 +53,13 @@ For more detail, please refer to our paper: [YOGO](https://arxiv.org/abs/2103.09
 
 Related works:
 ```
-@article{xu2020squeezesegv3,
-  title={SqueezeSegV3: Spatially-Adaptive Convolution for Efficient Point-Cloud Segmentation},
+@inproceedings{xu2020squeezesegv3,
+  title={Squeezesegv3: Spatially-adaptive convolution for efficient point-cloud segmentation},
   author={Xu, Chenfeng and Wu, Bichen and Wang, Zining and Zhan, Wei and Vajda, Peter and Keutzer, Kurt and Tomizuka, Masayoshi},
-  journal={arXiv preprint arXiv:2004.01803},
-  year={2020}
+  booktitle={European Conference on Computer Vision},
+  pages={1--19},
+  year={2020},
+  organization={Springer}
 }
 ```
 
