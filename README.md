@@ -6,7 +6,7 @@ By Chenfeng Xu, Bohan Zhai, Bichen Wu, Tian Li, Wei Zhan, Peter Vajda, Kurt Keut
 </p>
 
 
-This repository contains a Pytorch implementation of YOGO, a new, simple, and elegant model for point-cloud processing. The framework of our YOGO can be found below:
+This repository contains a Pytorch implementation of YOGO, a new, simple, and elegant model for point-cloud processing. The framework of our YOGO is shown below:
 
 <p align="center">
     <img src="./figure/framework.png"/ width="750">
@@ -38,7 +38,7 @@ Selected quantitative results of different approaches on the ShapeNet and S3DIS 
 | YOGO(KNN)      | 54.0 |27.7          | 2.0            |
 |YOGO(Ball query)| 53.8 |24.0          | 2.0            |
 
-If you find this work useful for your research, please consider citing:
+For more detail, please refer to our paper: [YOGO](https://arxiv.org/abs/2103.09975). The work is a follow-up work to [SqueezeSegV3](https://arxiv.org/abs/2004.01803) and [Visual Transformers](https://arxiv.org/abs/2006.03677). If you find this work useful for your research, please consider citing:
 
 ```
 @misc{xu2021group,
@@ -51,12 +51,24 @@ If you find this work useful for your research, please consider citing:
 }
 ```
 
+Related works:
 ```
 @article{xu2020squeezesegv3,
   title={SqueezeSegV3: Spatially-Adaptive Convolution for Efficient Point-Cloud Segmentation},
   author={Xu, Chenfeng and Wu, Bichen and Wang, Zining and Zhan, Wei and Vajda, Peter and Keutzer, Kurt and Tomizuka, Masayoshi},
   journal={arXiv preprint arXiv:2004.01803},
   year={2020}
+}
+```
+
+```
+@misc{wu2020visual,
+      title={Visual Transformers: Token-based Image Representation and Processing for Computer Vision}, 
+      author={Bichen Wu and Chenfeng Xu and Xiaoliang Dai and Alvin Wan and Peizhao Zhang and Zhicheng Yan and Masayoshi Tomizuka and Joseph Gonzalez and Kurt Keutzer and Peter Vajda},
+      year={2020},
+      eprint={2006.03677},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
@@ -87,8 +99,10 @@ cd convpoint/knn/
 python setup.py install --home='.'
 ```
 
-
 * Click to download [ShapeNet](https://www.shapenet.org) and [S3DIS](https://web.archive.org/web/20200707221857/http://buildingparser.stanford.edu/dataset.html#Download) dataset.
+
+## Pre-trained Models
+The pre-trained YOGO is avalible at [Google Drive](https://drive.google.com/drive/folders/1LDUNG-K9xTCX6TF2tI71vAnmZkjDf6NH?usp=sharing), you can directly download them.
 
 ## Inference
 To infer the predictions for the entire dataset:
@@ -100,7 +114,7 @@ python train.py [config-file] --devices [gpu-ids] --evaluate --configs.evaluate.
 for example, you can run the below command for ShapeNet inference:
 
 ```shell
-python train.py configs/shapenet/yogo/yogo.py --devices 0 --evaluate --configs.evaluate.best_checkpoint_path [path to the model checkpoint]
+python train.py configs/shapenet/yogo/yogo.py --devices 0 --evaluate --configs.evaluate.best_checkpoint_path ./runs/shapenet/best.pth
 ```
 
 
