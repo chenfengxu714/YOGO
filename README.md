@@ -1,4 +1,4 @@
-# You Only Group Once: Efficient Point-Cloud Processing with Token Representation and Relation Inference Module
+# You Only Group Once: Efficient Point-Cloud Processing with Token Representation and Relation Inference Module (IROS 2021)
 By Chenfeng Xu, Bohan Zhai, Bichen Wu, Tian Li, Wei Zhan, Peter Vajda, Kurt Keutzer, and Masayoshi Tomizuka.
 
 <p align="center">
