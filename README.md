@@ -41,13 +41,11 @@ Selected quantitative results of different approaches on the ShapeNet and S3DIS 
 For more detail, please refer to our paper: [YOGO](https://arxiv.org/abs/2103.09975). The work is a follow-up work to [SqueezeSegV3](https://arxiv.org/abs/2004.01803) and [Visual Transformers](https://arxiv.org/abs/2006.03677). If you find this work useful for your research, please consider citing:
 
 ```
-@misc{xu2021group,
-      title={You Only Group Once: Efficient Point-Cloud Processing with Token Representation and Relation Inference Module}, 
-      author={Chenfeng Xu and Bohan Zhai and Bichen Wu and Tian Li and Wei Zhan and Peter Vajda and Kurt Keutzer and Masayoshi Tomizuka},
-      year={2021},
-      eprint={2103.09975},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
+@article{xu2021you,
+  title={You Only Group Once: Efficient Point-Cloud Processing with Token Representation and Relation Inference Module},
+  author={Xu, Chenfeng and Zhai, Bohan and Wu, Bichen and Li, Tian and Zhan, Wei and Vajda, Peter and Keutzer, Kurt and Tomizuka, Masayoshi},
+  journal={arXiv preprint arXiv:2103.09975},
+  year={2021}
 }
 ```
 
