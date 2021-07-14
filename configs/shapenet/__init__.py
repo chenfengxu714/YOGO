@@ -22,7 +22,7 @@ configs.dataset.num_points = 2048
 # evaluate configs
 configs.evaluate = Config()
 configs.evaluate.fn = evaluate
-configs.evaluate.num_votes = 1
+configs.evaluate.num_votes = 10
 configs.evaluate.dataset = Config(split='test')
 
 # train configs
