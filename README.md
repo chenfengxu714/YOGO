@@ -101,6 +101,13 @@ python setup.py install --home='.'
 
 * Click to download [ShapeNet](https://www.shapenet.org) and [S3DIS](https://web.archive.org/web/20200707221857/http://buildingparser.stanford.edu/dataset.html#Download) dataset.
 
+
+## Prepare the S3DIS dataset
+```
+cd data/s3dis
+python prepare_data.py
+```
+
 ## Pre-trained Models
 The pre-trained YOGO is avalible at [Google Drive](https://drive.google.com/drive/folders/1LDUNG-K9xTCX6TF2tI71vAnmZkjDf6NH?usp=sharing), you can directly download them.
 
