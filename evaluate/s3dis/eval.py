@@ -147,7 +147,6 @@ def evaluate(configs=None):
             total_num_voted_points = extra_batch_size * dataset.num_points
 
             for min_window_index in range(0, num_windows, configs.evaluate.batch_size):
-                idx += 1
                 max_window_index = min(min_window_index + configs.evaluate.batch_size, num_windows)
                 batch_size = max_window_index - min_window_index
                 window_data = scene_data[np.arange(min_window_index, max_window_index)]
